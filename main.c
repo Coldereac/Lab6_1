@@ -12,13 +12,13 @@ int main() {
 }
 
 long rf_calculation(int n, int level) {
-    printf(" Level: %d\t Recursive descent:%d\n", level, n);
+    printf(" |Level: %d|\t|Recursive descent:%d|\n", level, n);
     if (n == 1|| n == 0) {
-        printf(" Level: %d\t Recursive descent:%d\tCurrent value: %d\n", level, n, 1);
+        printf(" |Level: %d|\t|Recursive descent:%d|\t|Current value: %d|\n", level, n, 1);
         return 1;
     }
         long int result = n * rf_calculation(n - 1, level+1);
-        printf(" Level: %d\t Recursive descent:%d\tCurrent value: %ld\n", level, n, result);
+        printf(" |Level: %d|\t|Recursive descent:%d|\t|Current value: %ld|\n", level, n, result);
         return result;
 }
 
